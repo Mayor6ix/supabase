@@ -68,7 +68,7 @@ const GlobalNavigationMenu: FC = () => {
 
         return section.menuItems ? (
           <TopNavMenuItem key={section.label} label={label} aria-current={ariaCurrent}>
-            <TopNavMenuPanel>
+            <TopNavMenuPanel className="pr-5 pl-(--nav-menu-inset)">
               {section.menuItems.map((group, index) => (
                 <GlobalMenuGroup
                   key={group[0].label}
